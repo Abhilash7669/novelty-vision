@@ -6,7 +6,7 @@ type Props = object;
 
 export default function ProductShowcase({}: Props) {
   return (
-    <section className="relative space-y-12">
+    <section className="relative space-y-12 pb-24">
       <div className="space-y-4 flex flex-col md:items-center">
         <h3 className="font-neue-montreal font-medium text-4xl text-white">
           Meet Halo
@@ -16,13 +16,13 @@ export default function ProductShowcase({}: Props) {
           from next-gen startups to established enterprises.
         </p>
       </div>
-      <div className="rounded-[1.25rem] w-full relative overflow-hidden max-w-[80%] mx-auto">
-        <div className="absolute inset-0 -z-10">
+      <div className="rounded-[1.25rem] h-[60vw] md:h-[34vw] w-full relative overflow-hidden md:max-w-[80%] mx-auto">
+        <div className="absolute inset-0 -z-10 h-full w-full">
           <div className="relative h-full w-full">
-            <Image fill src={Card} alt="card" />
+            <Image fill src={Card} className="object-cover" alt="card" />
           </div>
         </div>
-        <div className="relative h-[30vw] w-full">
+        <div className="relative h-full w-full">
           <Image src={Halo} fill className="object-contain" alt="image" />
         </div>
       </div>

@@ -6,7 +6,7 @@ type Props = object;
 
 export default function Header({}: Props) {
   return (
-    <header className="fixed top-12 left-2/4 -translate-x-2/4 w-[92%] z-50">
+    <header className="fixed top-12 left-2/4 -translate-x-2/4 w-[78%] z-50">
       <nav className="flex items-center justify-between">
         <div className="flex items-center space-x-8">
           <p>N</p>
