@@ -23,7 +23,7 @@ export default function Header({}: Props) {
             ))}
           </ul>
           <Button>
-            Contact us
+            Contact Sales
           </Button>
         </div>
       </nav>

@@ -1,15 +1,18 @@
+import CaretRight from "@/components/common/arrow/caret-right";
 import { cn } from "@/lib/utils";
 
 type Props = {
   variant?: "default" | "secondary" | "destructive"; 
   children: React.ReactNode;
   className?: string;
+  hasArrow?: boolean;
 } & React.ButtonHTMLAttributes<HTMLButtonElement>;
 
 export default function Button({
   variant = "default", 
   className = "",
   children,
+  hasArrow = false,
   ...props
 }: Props) {
 
@@ -19,14 +22,14 @@ export default function Button({
     destructive: "bg-red-500 text-white",
   };
 
-  const baseClass = "rounded-full py-[0.75rem] px-4 text-sm cursor-pointer font-medium transition-all hover:opacity-90 active:scale-95";
+  const baseClass = "rounded-full py-[0.75rem] flex items-center space-x-1 px-4 text-sm cursor-pointer font-medium transition-all hover:opacity-90 active:scale-95";
 
   return (
     <button
       className={cn(baseClass, variantClasses[variant], className)}
       {...props}
     >
-      {children}
+      {children}{hasArrow && <CaretRight />}
     </button>
   );
 }

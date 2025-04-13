@@ -6,7 +6,7 @@ type Props = object;
 export default function Hero({}: Props) {
   return (
     <section className="flex flex-col items-start md:items-center justify-start space-y-10 ">
-        <Chip>
+        <Chip hasArrow variant="gradient">
             Introducing Halo, how can DOOH benefit you?
         </Chip>
         <div className="flex flex-col items-start md:items-center space-y-6">
@@ -16,8 +16,8 @@ export default function Hero({}: Props) {
             <p className="text-muted-foreground text-lg md:text-center">
                 With over 8 years of experience, Genesis are a passionate, driven and attentive.
             </p>
-            <Button>
-                Book an intro
+            <Button hasArrow>
+                Get Started
             </Button>
         </div>
     </section>
