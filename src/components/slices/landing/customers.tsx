@@ -1,3 +1,4 @@
+import Chip from "@/components/common/button/chip";
 import GlowContainer from "@/components/common/glow-container/glow-container";
 import { customers } from "@/data/customers";
 import Image from "next/image";
@@ -23,6 +24,9 @@ export default function Customers({}: Props) {
                 </li>
             ))}
         </ul>
+        <Chip>
+            Meet our customers
+        </Chip>
       </div>
     </GlowContainer>
   );

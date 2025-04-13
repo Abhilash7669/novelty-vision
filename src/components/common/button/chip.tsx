@@ -14,10 +14,10 @@ export default function Chip({
 }: Props) {
 
   const variantClasses = {
-    default: "bg-shadow text-subtle",
+    default: "bg-[#32394a] text-subtle",
   };
 
-  const baseClass = "rounded-full py-2 px-4 text-sm font-medium";
+  const baseClass = "rounded-full py-2 px-6 text-sm font-medium";
 
   return (
     <button
