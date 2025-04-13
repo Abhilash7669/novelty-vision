@@ -7,8 +7,8 @@ type Props = object;
 
 export default function Customers({}: Props) {
   return (
-    <GlowContainer className="flex items-start md:items-center justify-center">
-      <div className="flex flex-col items-center justify-center space-y-12 w-[92%] md:w-auto mx-auto">
+    <GlowContainer className="flex flex-col items-start md:items-center justify-center">
+      <div className="flex flex-col items-start md:items-center justify-center space-y-12">
         <div>
           <p className="text-white text-lg md:text-center">
             Powering the world&apos;s best product teams.
