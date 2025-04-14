@@ -12,7 +12,7 @@ export default function ProductShowcase({}: Props) {
           Advertise with Halo
         </h3>
       </div>
-      <div className="flex items-end rounded-[1.25rem] h-[60vw] md:h-[34vw] w-full relative overflow-hidden md:max-w-[80%] mx-auto border-[#EBE5D2] border-[0.5px] bg-[rgba(36,38,43,0.16)]">
+      <div className="flex items-end rounded-[1.25rem] h-[60vw] md:h-[34vw] w-full relative overflow-hidden md:max-w-[80%] mx-auto border-[#EBE5D2] border-[0.25px] bg-[rgba(36,38,43,0.16)]">
         <div className="relative h-[94%] w-full">
           <Image src={Halo} fill className="object-contain" alt="image" />
         </div>
