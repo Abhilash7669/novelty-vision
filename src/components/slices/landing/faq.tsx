@@ -1,5 +1,5 @@
 
-type Props = {}
+type Props = object;
 
 export default function Faq({}: Props) {
   return (

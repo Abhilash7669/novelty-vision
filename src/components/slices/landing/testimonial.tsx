@@ -2,7 +2,7 @@ import WhiteQuote from "@/assets/white-quote.svg";
 import { testimonial } from "@/data/testimonial";
 import Image from "next/image";
 
-type Props = {}
+type Props = object;
 
 export default function Testimonial({}: Props) {
   return (
