@@ -1,4 +1,3 @@
-import Chip from "@/components/common/button/chip";
 import GlowContainer from "@/components/common/glow-container/glow-container";
 import { customers } from "@/data/customers";
 import Image from "next/image";
@@ -17,14 +16,13 @@ export default function Customers({}: Props) {
             From next-gen startups to established enterprises.
           </p>
         </div>
-        <ul className="grid grid-cols-3 md:grid-cols-4 gap-12 w-full">
+        <ul className="grid grid-cols-3 md:grid-cols-4 gap-12 w-full max-w-3xl">
           {customers.map((item, i) => (
             <li className="flex items-center justify-center relative" key={i}>
               <Image src={item.src} alt="image" className="object-contain" />
             </li>
           ))}
         </ul>
-        <Chip>Meet our customers</Chip>
       </div>
     </GlowContainer>
   );

@@ -11,7 +11,8 @@ export default function Home() {
         </div>
         <Customers />
       </div>
-      <div className="w-[92%] mx-auto">
+      <div className="w-[92%] mx-auto relative">
+        <div className="absolute top-0 left-0 h-[7rem] w-full rounded-full blue-glow -z-10" />
         <ProductShowcase />
       </div>
     </main>

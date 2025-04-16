@@ -40,7 +40,7 @@ export default function RootLayout({
       <body
         className={`${inter.variable} ${neueMontreal.variable} antialiased`}
       >
-        <MainLayout className="max-w-[2200px] mx-auto">{children}</MainLayout>
+        <MainLayout className="limit-width mx-auto">{children}</MainLayout>
       </body>
     </html>
   );
