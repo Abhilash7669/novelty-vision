@@ -34,7 +34,7 @@
   --color-nav: hsla(212, 76%, 3%, 1);
 
   --color-blue-gradient: linear-gradient(180deg, #FFF -18.13%, #03439A 42.01%);
-
+  --color-shadow-gradient: linear-gradient(180deg, rgba(235, 229, 210, 0.50) -99.17%, rgba(104, 101, 90, 0.50) 100%);
 }
 
 @layer utilities {
@@ -42,6 +42,12 @@
     border-radius: 100%;
     background: var(--color-blue-gradient);
     filter: blur(300px);
+  }
+  .shadow-text-gradient {
+    background: var(--color-shadow-gradient);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
   }
   .limit-width {
     max-width: 138rem;
