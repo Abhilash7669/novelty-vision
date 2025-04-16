@@ -2,6 +2,7 @@ import Customers from "@/components/slices/landing/customers";
 import Hero from "@/components/slices/landing/hero";
 import ProductShowcase from "@/components/slices/landing/product-showcase";
 import Stats from "@/components/slices/landing/stats";
+import Testimonial from "@/components/slices/landing/testimonial";
 import WhatWeDo from "@/components/slices/landing/what-we-do";
 
 export default function Home() {
@@ -14,6 +15,7 @@ export default function Home() {
       </div>
       <ProductShowcase />
       <WhatWeDo />
+      <Testimonial />
     </main>
   );
 }

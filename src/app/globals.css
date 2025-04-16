@@ -34,7 +34,8 @@
   --color-nav: hsla(212, 76%, 3%, 1);
 
   --color-blue-gradient: linear-gradient(180deg, #FFF -18.13%, #03439A 42.01%);
-  --color-shadow-gradient: linear-gradient(180deg, rgba(235, 229, 210, 0.50) -99.17%, rgba(104, 101, 90, 0.50) 100%);
+  --color-secondary-gradient-stroke: linear-gradient(180deg, rgba(235, 229, 210, 0.50) -99.17%, rgba(104, 101, 90, 0.50) 100%);
+  --color-secondary-gradient: linear-gradient(180deg, #F5F5F5 0%, #EBE5D2 100%);
 }
 
 @layer utilities {
@@ -44,13 +45,16 @@
     filter: blur(300px);
   }
   .shadow-text-gradient {
-    background: var(--color-shadow-gradient);
+    background: var(--color-secondary-gradient-stroke);
     background-clip: text;
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
   }
   .limit-width {
     max-width: 138rem;
+  }
+  .secondary-gradient {
+    background: var(--color-secondary-gradient);
   }
 }
 
