@@ -1,4 +1,6 @@
 import Customers from "@/components/slices/landing/customers";
+import Faq from "@/components/slices/landing/faq";
+import GetStarted from "@/components/slices/landing/get-started";
 import Hero from "@/components/slices/landing/hero";
 import ProductShowcase from "@/components/slices/landing/product-showcase";
 import Stats from "@/components/slices/landing/stats";
@@ -16,6 +18,8 @@ export default function Home() {
       <ProductShowcase />
       <WhatWeDo />
       <Testimonial />
+      <Faq />
+      <GetStarted />
     </main>
   );
 }

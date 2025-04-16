@@ -1,6 +1,8 @@
-type Props = object;
+type Props = {
+  stroke?: string;
+};
 
-export default function CaretRight({}: Props) {
+export default function CaretRight({ stroke= "#000000" }: Props) {
   return (
     <svg
       xmlns="http://www.w3.org/2000/svg"
@@ -12,7 +14,7 @@ export default function CaretRight({}: Props) {
       <g clipPath="url(#clip0_314_88)">
         <path
           d="M8.25 4.125L15.125 11L8.25 17.875"
-          stroke="black"
+          stroke={stroke}
           strokeWidth="2.0625"
           strokeLinecap="round"
           strokeLinejoin="round"

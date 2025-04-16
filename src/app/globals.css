@@ -65,3 +65,39 @@
   }
 }
 
+.plus {
+  position: relative;
+  background-color: var(--color-secondary-gradient-stroke);
+  border-radius: 50%;
+  height: 2.4rem;
+  width: 2.4rem;
+  font-size: 1.6rem;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding-top: .2rem;
+}
+
+.plus::before {
+  content: '';
+  position: absolute;
+  height: 0.18rem;
+  width: 1.4rem;
+  background: var(--color-secondary-gradient-stroke);
+  transition: all .5s ease;
+}
+
+.plus::after {
+  content: '';
+  position: absolute;
+  transform: rotate(90deg);
+  height: 0.18rem;
+  width: 1.4rem;
+  background: var(--color-secondary-gradient-stroke);
+  transition: all .5s ease;
+}
+
+.faq-head-active .plus::after, .faq-head-active .plus::before {
+  transform: rotate(360deg);
+}

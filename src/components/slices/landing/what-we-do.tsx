@@ -1,10 +1,14 @@
+import SplitContainer from "@/components/common/container/split-container";
+
 type Props = object;
 
 export default function WhatWeDo({}: Props) {
   return (
     <section className="flex items-center justify-center w-[92%] xl:w-[76%] mx-auto">
-      <div className="flex flex-col xl:flex-row justify-between w-full space-y-2 xl:space-y-0">
-        <p className="text-xl xl:sticky xl:top-28 xl:left-0 xl:h-full">What we do?</p>
+      <SplitContainer>
+        <p className="text-xl xl:sticky xl:top-28 xl:left-0 xl:h-full">
+          What we do?
+        </p>
         <div className="max-w-[80ch] space-y-4">
           <p className="font-neue-montreal text-5xl font-medium">
             We turn everyday infrastructure into powerful media.
@@ -16,7 +20,7 @@ export default function WhatWeDo({}: Props) {
             better urban future for everyone.
           </p>
         </div>
-      </div>
+      </SplitContainer>
     </section>
   );
 }
