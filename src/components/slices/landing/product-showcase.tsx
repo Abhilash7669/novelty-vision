@@ -6,7 +6,7 @@ type Props = object;
 
 export default function ProductShowcase({}: Props) {
   return (
-    <section className="relative space-y-12 pb-24">
+    <section className="relative space-y-12 pb-24 w-[92%] mx-auto">
       <div className="space-y-4 flex flex-col md:items-center">
         <h3 className="font-neue-montreal font-medium text-4xl text-white">
           <span className="text-muted-foreground">Say Hello to</span>

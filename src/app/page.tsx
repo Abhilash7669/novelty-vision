@@ -2,20 +2,18 @@ import Customers from "@/components/slices/landing/customers";
 import Hero from "@/components/slices/landing/hero";
 import ProductShowcase from "@/components/slices/landing/product-showcase";
 import Stats from "@/components/slices/landing/stats";
+import WhatWeDo from "@/components/slices/landing/what-we-do";
 
 export default function Home() {
   return (
     <main className="space-y-24 md:space-y-36 relative">
       <div className="space-y-24">
-        <div className="w-[92%] mx-auto mt-44">
-          <Hero />
-        </div>
+        <Hero />
         <Customers />
         <Stats />
       </div>
-      <div className="w-[92%] mx-auto relative">
-        <ProductShowcase />
-      </div>
+      <ProductShowcase />
+      <WhatWeDo />
     </main>
   );
 }

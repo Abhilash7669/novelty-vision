@@ -29,7 +29,7 @@ export default function Stats({}: Props) {
 function Stat({ text, stat }: StatProps): JSX.Element {
   return (
     <div className="flex flex-col md:items-center justify-center">
-      <p className="shadow-text-gradient font-neue-montreal font-semibold text-7xl md:text-[8vw] md:text-center">
+      <p className="shadow-text-gradient font-neue-montreal font-medium text-7xl md:text-[8vw] md:text-center">
         {stat ? stat : "Default Text"}
       </p>
       <p className="text-muted-foreground text-lg md:text-[1vw] md:text-center">

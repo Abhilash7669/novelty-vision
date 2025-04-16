@@ -5,7 +5,7 @@ type Props = object;
 
 export default function Hero({}: Props) {
   return (
-    <section className="flex flex-col items-start md:items-center justify-start space-y-10 ">
+    <section className="flex flex-col items-start md:items-center justify-start space-y-10 w-[92%] mx-auto mt-44">
       <Chip hasArrow variant="gradient">
         Introducing Halo, how can DOOH benefit you?
       </Chip>
