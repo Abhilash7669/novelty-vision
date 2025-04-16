@@ -22,14 +22,14 @@ export default function Button({
     destructive: "bg-red-500 text-white",
   };
 
-  const baseClass = "rounded-full py-[0.75rem] flex items-center space-x-1 px-4 text-sm cursor-pointer font-medium transition-all hover:opacity-90 active:scale-95";
+  const baseClass = "rounded-full py-[0.75rem] flex items-center space-x-1 px-4 text-sm cursor-pointer font-medium transition-all hover:opacity-90 active:scale-95 group";
 
   return (
     <button
       className={cn(baseClass, variantClasses[variant], className)}
       {...props}
     >
-      {children}{hasArrow && <CaretRight />}
+      {children}{hasArrow && <span className="group-hover:left-1 left-0 relative transition-all"><CaretRight /></span>}
     </button>
   );
 }

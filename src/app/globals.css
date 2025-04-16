@@ -1,7 +1,8 @@
 @import "tailwindcss";
 
 :root {
-  --background: hsla(0, 0%, 0%, 1);
+  /* --background: hsla(0, 0%, 0%, 1); */
+  --background: hsla(213, 73%, 3%, 1);
   --foreground: #171717;
 }
 
@@ -31,6 +32,7 @@
   --color-chip: hsla(0, 0%, 15%, 1);
 
   --color-card: hsla(210, 7%, 16%, 0.16);
+  --color-nav: hsla(212, 76%, 3%, 1);
 }
 
 @media (prefers-color-scheme: dark) {
@@ -38,4 +40,16 @@
     --background: #0a0a0a;
     --foreground: #ededed;
   }
+}
+
+
+
+.here {
+  /* From https://css.glass */
+background: rgba(36, 38, 43, 0.23);
+border-radius: 16px;
+box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+backdrop-filter: blur(3.8px);
+-webkit-backdrop-filter: blur(3.8px);
+border: 1px solid rgba(36, 38, 43, 0.3);
 }
