@@ -12,7 +12,7 @@ type StatProps = {
 export default function Stats({}: Props) {
   return (
     <section className="flex items-center justify-center relative w-[92%] mx-auto">
-      <BlueGlow className="h-[14rem] top-full" />
+      {/* <BlueGlow className="h-[14rem] top-full" /> */}
       <div className="flex flex-wrap gap-12">
         {stats.map((item) => (
           <Stat 

@@ -17,7 +17,8 @@
 
   --color-primary: hsla(214, 95%, 29%, 1);
 
-  --color-background: hsla(213, 73%, 3%, 1);
+  /* --color-background: hsla(213, 73%, 3%, 1); */
+  --color-background: hsla(0, 0%, 1%, 1);
   --color-foreground: var(--foreground);
 
   --color-muted: hsla(0, 0%, 81%, 1);
@@ -31,7 +32,8 @@
   --color-chip: hsla(0, 0%, 15%, 1);
 
   --color-card: hsla(210, 7%, 16%, 0.16);
-  --color-nav: hsla(212, 76%, 3%, 1);
+  /* --color-nav: hsla(212, 76%, 3%, 1); */
+  --color-nav: hsla(0, 0%, 1%, 1);
 
   --color-blue-gradient: linear-gradient(180deg, #FFF -18.13%, #03439A 42.01%);
   --color-secondary-gradient-stroke: linear-gradient(180deg, rgba(235, 229, 210, 0.50) -99.17%, rgba(104, 101, 90, 0.50) 100%);

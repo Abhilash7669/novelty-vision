@@ -1,3 +1,4 @@
+import BgGrainContainer from "@/components/common/bg-grain/bg-grain";
 import Customers from "@/components/slices/landing/customers";
 import Faq from "@/components/slices/landing/faq";
 import GetStarted from "@/components/slices/landing/get-started";
@@ -9,17 +10,19 @@ import WhatWeDo from "@/components/slices/landing/what-we-do";
 
 export default function Home() {
   return (
-    <main className="space-y-24 md:space-y-36 relative">
-      <div className="space-y-24">
-        <Hero />
-        <Customers />
-        <Stats />
+    <BgGrainContainer>
+      <div className="space-y-24 md:space-y-36">
+        <div className="space-y-24">
+          <Hero />
+          <Customers />
+          <Stats />
+        </div>
+        <ProductShowcase />
+        <WhatWeDo />
+        <Testimonial />
+        <Faq />
+        <GetStarted />
       </div>
-      <ProductShowcase />
-      <WhatWeDo />
-      <Testimonial />
-      <Faq />
-      <GetStarted />
-    </main>
+    </BgGrainContainer>
   );
 }
