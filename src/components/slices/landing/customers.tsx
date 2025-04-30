@@ -1,4 +1,4 @@
-import GlowContainer from "@/components/common/glow-container/glow-container";
+import GlowContainer from "@/components/common/containers/glow-container";
 import { customers } from "@/data/customers";
 import Image from "next/image";
 

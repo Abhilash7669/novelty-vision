@@ -1,4 +1,4 @@
-import BgGrainContainer from "@/components/common/bg-grain/bg-grain";
+import BgGrainContainer from "@/components/common/containers/bg-grain-container";
 import Customers from "@/components/slices/landing/customers";
 import Faq from "@/components/slices/landing/faq";
 import GetStarted from "@/components/slices/landing/get-started";

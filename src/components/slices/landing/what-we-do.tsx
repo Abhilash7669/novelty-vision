@@ -1,4 +1,4 @@
-import SplitContainer from "@/components/common/container/split-container";
+import SplitContainer from "@/components/common/containers/split-container";
 
 type Props = object;
 
