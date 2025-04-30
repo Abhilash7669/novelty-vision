@@ -1,4 +1,3 @@
-// import Image from "next/image";
 // import Halo from "@/assets/halo-product.png";
 import Button from "@/components/common/button/button";
 import Circle from "@/components/common/circle/circle";
@@ -40,10 +39,10 @@ const M_DATA: IconShowcaseType[] = [
 export default function ProductShowcase({}: Props) {
   return (
     <section className="relative pb-24 w-full overflow-hidden product-showcase-bg rounded-b-4xl rounded-bl-4xl md:rounded-b-[18.6rem] md:rounded-bl-[18.6rem]">
-      <Circle className="absolute -top-[22rem] left-2/4 -translate-x-2/4 h-[32rem] w-[32rem] circle-shadow-faded" />
-      <div className="w-[82%] space-y-12 mx-auto">
-        <div className="space-y-4 flex flex-col md:items-center mt-64 relative">
-          <Circle className="absolute -top-24 left-2/4 -translate-x-2/4 h-[32rem] w-[32rem]" />
+      <Circle className="absolute hidden md:block -top-[22rem] left-2/4 -translate-x-2/4 h-[32rem] w-[32rem] circle-shadow-faded" />
+      <div className="w-[92%] space-y-12 mx-auto">
+        <div className="space-y-4 flex flex-col md:items-center mt-12 md:mt-64 relative">
+          <Circle className="absolute hidden md:block -top-24 left-2/4 -translate-x-2/4 h-[32rem] w-[32rem]" />
           <p className="font-neue-montreal font-medium text-4xl text-white">
             <span className="text-muted-foreground">Say Hello to</span>{" "}
             <span className="italic">Halo !</span>
@@ -62,7 +61,7 @@ export default function ProductShowcase({}: Props) {
           </p>
         </div>
       </div>
-      <div className="grid md:grid-cols-2 gap-12 mx-auto w-[82%] md:w-[58%] mt-20">
+      <div className="grid md:grid-cols-2 gap-12 mx-auto w-[92%] md:w-[58%] mt-20">
         {M_DATA.map((item, i) => (
           <IconShowcase
           key={i}
@@ -85,7 +84,7 @@ function IconShowcase({
   text = "",
 }: IconShowcaseType): JSX.Element {
   return (
-    <div className="flex flex-col gap-4">
+    <div className="flex flex-col gap-4 max-w-[60ch] md:max-w-full">
       <div className="relative h-[3rem] w-[3rem]">
         <Image fill alt="image" src={src} />
       </div>
