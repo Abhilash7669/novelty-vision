@@ -1,4 +1,3 @@
-import BlueGlow from "@/components/common/glow/blue-glow";
 import { stats } from "@/data/stats";
 import { JSX } from "react";
 
