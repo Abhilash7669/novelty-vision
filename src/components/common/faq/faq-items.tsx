@@ -28,7 +28,7 @@ export default function FaqItems({ faqData }: Props) {
   return (
     <ul className="w-full space-y-12">
         {faqData.map((item, i) => (
-            <li className="relative pb-6" key={i}>
+            <li className="relative pb-6 z-30" key={i}>
                 <div 
                     onClick={() => handleFaq(i)}
                     className={`${isActive === i && ("faq-head-active")} cursor-pointer flex items-center justify-between`}>

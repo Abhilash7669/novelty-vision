@@ -9,12 +9,13 @@ type Props = {
 export default function BgGrainContainer({ className= "", children }: Props) {
   return (
     <section className={cn("relative h-full border border-background", className)}>
-        <div className="absolute top-0 left-0 h-full w-full -z-10 opacity-10">
+        <div className="absolute top-0 left-0 h-full w-full z-20 opacity-25 md:opacity-15">
             <div className="relative h-full w-full">
                 <Image
                     fill
-                    src="/bg/bg-grains.png"
+                    src="/bg/bg-grains.svg"
                     alt="bg-grain"
+                    className="object-cover"
                 />
             </div>
         </div>

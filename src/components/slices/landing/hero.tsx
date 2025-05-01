@@ -16,7 +16,7 @@ export default function Hero({}: Props) {
         <p className="text-muted-foreground text-lg md:text-center">
           Real World. Real Spaces. Real Impact
         </p>
-        <Button hasArrow>Get Started</Button>
+        <Button className="z-30" hasArrow>Get Started</Button>
       </div>
     </section>
   );

@@ -72,7 +72,7 @@ export default function ProductShowcase({}: Props) {
         ))}
       </div>
       <div className="flex items-center w-[82%] mx-auto md:justify-center mt-24">
-        <Button hasArrow>Get your ad slots now</Button>
+        <Button className="z-30" hasArrow>Get your ad slots now</Button>
       </div>
     </section>
   );
