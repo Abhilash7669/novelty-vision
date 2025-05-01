@@ -13,7 +13,7 @@ export default function Header({}: Props) {
         <div className="relative w-full flex items-center justify-center py-8 limit-width">
           <nav className="flex items-center justify-between w-[92%]">
             <div className="flex items-center space-x-8">
-              <Link href="/">
+              <Link  href="/">
                 <p>N</p>
               </Link>
               <ul className="hidden md:flex items-center space-x-6">

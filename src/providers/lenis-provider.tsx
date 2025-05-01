@@ -2,7 +2,7 @@
 
 import Lenis from "lenis";
 import { usePathname } from "next/navigation";
-import { useEffect } from "react";
+import { useEffect, useState } from "react";
 
 
 type Props = {
@@ -11,11 +11,12 @@ type Props = {
 
 export default function LenisProvider({ children }: Props) {
 
-    const router = usePathname();
+    const [lenisRef, setLenisRef] = useState<Lenis | null>(null);
+
+    const pathName = usePathname();
 
     
     useEffect(() => {
-
 
         const lenis = new Lenis({
             duration: 2.6,
@@ -28,6 +29,7 @@ export default function LenisProvider({ children }: Props) {
         };
 
         const rf = requestAnimationFrame(raf);
+        setLenisRef(() => lenis);
 
         return () => {
             cancelAnimationFrame(rf);
@@ -35,8 +37,14 @@ export default function LenisProvider({ children }: Props) {
 
     }, []);
 
+    useEffect(() => {
+
+        lenisRef?.scrollTo(0, { immediate: true });
+
+    }, [lenisRef, pathName]);
+
     return(
-        <div className={router === "/" ? "" : "pt-44"}>
+        <div className={pathName === "/" ? "" : "pt-44"}>
             { children }
         </div>
     )

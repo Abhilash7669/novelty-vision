@@ -1,13 +1,47 @@
 @import "tailwindcss";
 
 :root {
-  --background: hsla(213, 73%, 3%, 1);
+  /* --background: hsla(213, 73%, 3%, 1); */
+  --background: hsla(0, 0%, 1%, 1);
   --foreground: #171717;
+}
+
+/* lenis */
+html.lenis,
+html.lenis body {
+  height: auto;
+}
+
+.lenis:not(.lenis-autoToggle).lenis-stopped {
+  overflow: clip;
+}
+
+.lenis.lenis-smooth [data-lenis-prevent] {
+  overscroll-behavior: contain;
+}
+
+.lenis.lenis-smooth iframe {
+  pointer-events: none;
+}
+
+.lenis.lenis-autoToggle {
+  transition-property: overflow;
+  transition-duration: 1ms;
+  transition-behavior: allow-discrete;
+}
+/* lenis */
+
+.page-transition {
+  opacity: 0;
+  background: var(--background);
+  transform: translateY(40px); 
+  filter: blur(12px);  
+  transition: all 0.5s ease-in-out;
 }
 
 @layer base {
   body {
-    @apply font-inter bg-background text-white text-base overflow-x-hidden
+    @apply font-inter bg-background text-white text-base overflow-x-hidden transition-all
   }
 }
 
@@ -75,31 +109,6 @@
     --foreground: #ededed;
   }
 } */
-
-/* lenis */
-html.lenis,
-html.lenis body {
-  height: auto;
-}
-
-.lenis:not(.lenis-autoToggle).lenis-stopped {
-  overflow: clip;
-}
-
-.lenis.lenis-smooth [data-lenis-prevent] {
-  overscroll-behavior: contain;
-}
-
-.lenis.lenis-smooth iframe {
-  pointer-events: none;
-}
-
-.lenis.lenis-autoToggle {
-  transition-property: overflow;
-  transition-duration: 1ms;
-  transition-behavior: allow-discrete;
-}
-/* lenis */
 
 .plus {
   position: relative;

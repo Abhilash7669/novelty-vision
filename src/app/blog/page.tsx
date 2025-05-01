@@ -1,7 +1,7 @@
-import Link from "next/link";
 import { type SanityDocument } from "next-sanity";
 
 import { client } from "@/sanity/client";
+import TransitionLink from "@/components/common/link/transition-link";
 
 const POSTS_QUERY = `*[
   _type == "post"
@@ -19,10 +19,10 @@ export default async function Page() {
       <ul className="flex flex-col gap-y-4">
         {posts.map((post) => (
           <li className="hover:underline" key={post._id}>
-            <Link href={`/blog/${post.slug.current}`}>
+            <TransitionLink href={`/blog/${post.slug.current}`}>
               <h2 className="text-xl font-semibold">{post.title}</h2>
               <p>{new Date(post.publishedAt).toLocaleDateString()}</p>
-            </Link>
+            </TransitionLink>
           </li>
         ))}
       </ul>
