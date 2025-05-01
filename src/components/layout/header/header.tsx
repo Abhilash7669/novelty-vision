@@ -16,7 +16,7 @@ export default function Header({}: Props) {
               <Link  href="/">
                 <p>N</p>
               </Link>
-              <ul className="hidden md:flex items-center space-x-6">
+              <ul className="flex items-center space-x-6">
                 {headerLinkA.map((item) => (
                   <HeaderLink key={item.text} item={item} />
                 ))}
