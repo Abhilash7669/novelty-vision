@@ -10,17 +10,17 @@ export default function Header({}: Props) {
       <div className="relative flex items-center justify-center">
         <div className="absolute bottom-0 left-0 w-full h-[0.5px] bg-gradient-to-b from-[rgba(235,229,210,0.5)] to-[rgba(104,101,90,0.5)]" />
         <div className="relative w-full flex items-center justify-center py-8 limit-width">
-          <nav className="flex items-center justify-between w-[78%]">
+          <nav className="flex items-center justify-between w-[92%]">
             <div className="flex items-center space-x-8">
               <p>N</p>
-              <ul className="flex items-center space-x-6">
+              <ul className="hidden md:flex items-center space-x-6">
                 {headerLinkA.map((item) => (
                   <HeaderLink key={item.text} item={item} />
                 ))}
               </ul>
             </div>
             <div className="flex items-center space-x-6">
-              <ul>
+              <ul className="hidden md:flex">
                 {headerLinkB.map((item) => (
                   <HeaderLink key={item.text} item={item} />
                 ))}
