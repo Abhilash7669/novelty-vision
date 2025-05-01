@@ -1,6 +1,7 @@
 import Button from "@/components/common/button/button";
 import HeaderLink from "@/components/layout/header/header-link";
 import { headerLinkA, headerLinkB } from "@/data/header";
+import Link from "next/link";
 
 type Props = object;
 
@@ -12,7 +13,9 @@ export default function Header({}: Props) {
         <div className="relative w-full flex items-center justify-center py-8 limit-width">
           <nav className="flex items-center justify-between w-[92%]">
             <div className="flex items-center space-x-8">
-              <p>N</p>
+              <Link href="/">
+                <p>N</p>
+              </Link>
               <ul className="hidden md:flex items-center space-x-6">
                 {headerLinkA.map((item) => (
                   <HeaderLink key={item.text} item={item} />

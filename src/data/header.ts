@@ -2,8 +2,8 @@ import { Links } from "@/types/common-types";
 
 export const headerLinkA: Links = [
   {
-    href: "",
-    text: "Products",
+    href: "/blog",
+    text: "Blog",
   },
   {
     href: "",

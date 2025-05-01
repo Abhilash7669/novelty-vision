@@ -11,7 +11,9 @@ export default function MainLayout({ children, className = "" }: Props) {
     <LenisProvider>
       <div className={className}>
         <Header />
-        {children}
+        <div className="pt-44">
+          {children}
+        </div>
       </div>
     </LenisProvider>
   );
