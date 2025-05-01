@@ -1,6 +1,7 @@
 "use client";
 
 import Lenis from "lenis";
+import { usePathname } from "next/navigation";
 import { useEffect } from "react";
 
 
@@ -9,6 +10,8 @@ type Props = {
 };
 
 export default function LenisProvider({ children }: Props) {
+
+    const router = usePathname();
 
     
     useEffect(() => {
@@ -33,7 +36,7 @@ export default function LenisProvider({ children }: Props) {
     }, []);
 
     return(
-        <div>
+        <div className={router === "/" ? "" : "pt-44"}>
             { children }
         </div>
     )
