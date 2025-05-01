@@ -8,7 +8,7 @@ type Props = {
 
 export default function BgGrainContainer({ className= "", children }: Props) {
   return (
-    <section className={cn("relative h-full border border-background", className)}>
+    <section className={cn("relative h-full border border-transparent", className)}>
         <div className="absolute top-0 left-0 h-full w-full z-20 opacity-0 md:opacity-15">
             <div className="relative h-full w-full">
                 <Image

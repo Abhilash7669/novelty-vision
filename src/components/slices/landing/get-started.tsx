@@ -5,7 +5,7 @@ type Props = object;
 
 export default function GetStarted({}: Props) {
   return (
-    <section className="flex items-center justify-center relative py-24">
+    <section className="flex items-center justify-center relative pt-24">
         <div className="w-[92%] space-y-6 flex flex-col items-center justify-center">
             <div className="space-y-4 flex flex-col items-center justify-center">
                 <p className="text-5xl text-muted-foreground font-neue-montreal font-medium">
